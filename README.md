@@ -1,4 +1,4 @@
-# Arduino-Code-for-Nasal-Cannula
+**# Arduino-Code-for-Nasal-Cannula
 Project for Duke Engineers for International Development 2025
 
 Cannula Dislodgement Monitor (Theristor-Based)
@@ -8,11 +8,11 @@ This repository contains Arduino firmware for a cannula dislodgement monitoring 
 
 The firmware implements debounced user input, timed calibration, threshold-based detection, latched fault handling, and continuous status reporting via both serial output and LCD display.
 
-System Overview
+**System Overview**
 
 The thermistor is sampled at fixed intervals and averaged during a calibration phase to establish a baseline reading. During normal operation, the system compares live readings against a configurable threshold derived from this baseline. If a sustained drop below the threshold is detected, the system enters a latched alarm state that requires manual user intervention to reset and recalibrate.
 
-Detection Logic
+**Detection Logic**
 
 A baseline thermistor value is established during a 5-second calibration period.
 
@@ -22,7 +22,7 @@ A dislodgement event is confirmed only after 10 consecutive readings below the t
 
 Once confirmed, the alarm and indicator LED remain active until the user initiates recalibration.
 
-User Interaction
+**User Interaction**
 
 A push button is used to:
 
@@ -36,8 +36,8 @@ Button input is debounced in software to prevent false triggering.
 
 A calibration LED provides visual feedback during baseline acquisition.
 
-Display Output
-
+**Display Output
+**
 A 16x2 I2C LCD provides real-time system feedback:
 
 Line 1:
@@ -64,8 +64,8 @@ Detection counters
 
 Alarm state messages
 
-This output is intended for debugging, validation, and tuning during development.
-
+**This output is intended for debugging, validation, and tuning during development.
+**
 Hardware Configuration
 Pin Assignments
 Function	Pin
@@ -102,6 +102,7 @@ No persistent storage for calibration data.
 
 Not intended for clinical or safety-critical deployment.
 
-Disclaimer
+**Disclaimer**
 
-This firmware is provided for educational and prototyping purposes only. It is not validated for medical use and should not be relied upon in clinical environments.
+This firmware is provided for educational and prototyping purposes only. It is not currently validated and approved for medical use.
+**
