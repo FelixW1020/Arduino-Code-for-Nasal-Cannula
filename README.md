@@ -10,6 +10,9 @@ This repository contains Arduino firmware for a cannula dislodgement monitoring 
 
 The firmware implements debounced user input, timed calibration, threshold-based detection, latched fault handling, and continuous status reporting via both serial output and LCD display.
 
+<img width="919" height="1632" alt="image" src="https://github.com/user-attachments/assets/107a53ef-5fbf-41ec-b1d8-dc923ca8adcd" />
+
+
 **System Overview**
 
 The thermistor is sampled at fixed intervals and averaged during a calibration phase to establish a baseline reading. During normal operation, the system compares live readings against a configurable threshold derived from this baseline. If a sustained drop below the threshold is detected, the system enters a latched alarm state that requires manual user intervention to reset and recalibrate.
