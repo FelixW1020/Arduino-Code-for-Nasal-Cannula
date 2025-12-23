@@ -1,6 +1,6 @@
-**# Arduino-Code-for-Nasal-Cannula
-Project for Duke Engineers for International Development 2025
-
+Arduino-Code-for-Nasal-Cannula in C++
+**Project for Duke Engineers for International Development 2025
+**
 Cannula Dislodgement Monitor (Theristor-Based)
 Description
 
