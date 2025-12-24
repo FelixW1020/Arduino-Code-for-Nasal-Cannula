@@ -10,8 +10,7 @@ This repository contains Arduino firmware for a cannula dislodgement monitoring 
 
 The firmware implements debounced user input, timed calibration, threshold-based detection, latched fault handling, and continuous status reporting via both serial output and LCD display.
 
-<img width="919" height="1632" alt="image" src="https://github.com/user-attachments/assets/107a53ef-5fbf-41ec-b1d8-dc923ca8adcd" />
-
+_Refer to the bottom of README File for reference of final device_
 
 **System Overview**
 
@@ -111,3 +110,6 @@ Not intended for clinical or safety-critical deployment.
 
 This firmware is provided for educational and prototyping purposes only. It is not currently validated and approved for medical use.
 **
+
+<img width="1066" height="1134" alt="image" src="https://github.com/user-attachments/assets/3f7cb37a-9a90-4cf6-8889-7b8bc97f6641" />
+
